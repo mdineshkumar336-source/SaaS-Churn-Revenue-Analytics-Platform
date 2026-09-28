@@ -1,0 +1,19 @@
+# Week Project – SaaS Churn & Revenue Analytics Platform
+
+# ============================================================
+# MODULE 12 — Power BI Dashboard
+# ============================================================
+
+# Cross-check one figure against your Python output
+
+import pandas as pd
+
+# Load cleaned subscriptions data
+subscriptions = pd.read_csv("cleaned_subscriptions.csv")
+
+# Calculate Total MRR
+total_mrr = subscriptions["MRR"].sum()
+
+print("Python Total MRR:", total_mrr)
+print("Python Total MRR (K):", total_mrr / 1000)
+
